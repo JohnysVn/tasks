@@ -58,7 +58,7 @@ void Triangle(string path)
 
 int main(int argc, char* argv[])
 {
-	string path = ("Triangle.txt");
+	string path = (argv[1]);
 
     Triangle(path);
   
