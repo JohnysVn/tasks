@@ -87,14 +87,16 @@ public:
 
 int main(int argc, char*argv [])
 {
+	if (argc < 2)
+		cout<<"have not arguments";
+	if (argc > 2)
+		cout<<"Too many arguments";
 	setlocale(LC_ALL, "ru");
 	
 	string path = (argv[1]);
 	
 	File f;
 	f.Take(path);
-
-	system("pause");
 	
-	return 0;
+  	return 0;
 }
